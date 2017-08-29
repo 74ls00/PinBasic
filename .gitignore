@@ -1,24 +1,17 @@
-DSS3P-----.brd
-1.txt
-mod.txt
-packHWProgPro7z.txt
-partlist.txt
 git.txt
 
 pict/
 backup/
 com/
 local/
-
-print/
-DSS-3.2P.wiki
-
+arduino_BASIC_Proteus
 
 
 
 *.bak
 *.lnk
 *.log
+*.b##
 *.b#1
 *.b#2
 *.b#3
@@ -28,6 +21,7 @@ DSS-3.2P.wiki
 *.b#7
 *.b#8
 *.b#9
+*.s##
 *.s#1
 *.s#2
 *.s#3
