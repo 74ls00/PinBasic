@@ -5,7 +5,7 @@ backup/
 com/
 local/
 arduino_BASIC_Proteus
-
+tmp
 
 
 *.bak
