@@ -1,0 +1,23 @@
+a0 			pc0
+a1  		pc1
+a2  		pc2
+a3  		pc3
+a4	i2c sda            pc4
+a5	i2c scl            pc5
+a6  		adc6
+a7  		adc7
+d0  		rx
+d1  		tx
+d2  		pd2
+d3	kb	i              int1
+d4			pd4
+d5	buz                pd5
+d6			pd6
+d7			pd7
+d8	kb dat             pb0
+d9	led data d1        pb1
+d10	led clk d0         pb2
+d11 led dc             mosi
+d12 led cs             miso
+d13 led rst led (to7)  sck
+
