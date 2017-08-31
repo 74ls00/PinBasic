@@ -130,7 +130,7 @@ PROGMEM const TokenTableEntry tokenTable[] = {
     {"STEP",TKN_FMT_PRE|TKN_FMT_POST}, {"NEXT", TKN_FMT_POST}, {"MOD",TKN_FMT_PRE|TKN_FMT_POST}, {"NEW",TKN_FMT_POST},
     {"GOSUB",TKN_FMT_POST}, {"RETURN",TKN_FMT_POST}, {"DIM", TKN_FMT_POST}, {"LEFT$",2|TKN_ARG1_TYPE_STR|TKN_RET_TYPE_STR},
     {"RIGHT$",2|TKN_ARG1_TYPE_STR|TKN_RET_TYPE_STR}, {"MID$",3|TKN_ARG1_TYPE_STR|TKN_RET_TYPE_STR}, {"CLS",TKN_FMT_POST}, {"PAUSE",TKN_FMT_POST},
-    {"POSITION", TKN_FMT_POST},  {"PIN",TKN_FMT_POST}, {"PINMODE", TKN_FMT_POST}, {"INKEY$", 0},
+    {"POS", TKN_FMT_POST},  {"PIN",TKN_FMT_POST}, {"PINMODE", TKN_FMT_POST}, {"INKEY$", 0},
     {"SAVE", TKN_FMT_POST}, {"LOAD", TKN_FMT_POST}, {"PINREAD",1}, {"ANALOGRD",1},
     {"DIR", TKN_FMT_POST}, {"DELETE", TKN_FMT_POST}
 };
@@ -1506,7 +1506,7 @@ int parseTwoIntCmd() {
         int second = (int)stackPopNum();
         int first = (int)stackPopNum();
         switch(op) {
-        case TOKEN_POSITION: 
+        case TOKEN_POS: 
             host_moveCursor(first,second); 
             break;
         case TOKEN_PIN: 
@@ -1828,7 +1828,7 @@ int parseStmts()
             ret = parseLoadSaveCmd();
             break;
         
-        case TOKEN_POSITION:
+        case TOKEN_POS:
         case TOKEN_PIN:
         case TOKEN_PINMODE:
             ret = parseTwoIntCmd(); 

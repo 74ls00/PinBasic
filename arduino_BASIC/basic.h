@@ -57,7 +57,7 @@
 #define TOKEN_MID		53
 #define TOKEN_CLS               54
 #define TOKEN_PAUSE             55
-#define TOKEN_POSITION          56
+#define TOKEN_POS          56//POSITION 
 #define TOKEN_PIN               57
 #define TOKEN_PINMODE           58
 #define TOKEN_INKEY             59
