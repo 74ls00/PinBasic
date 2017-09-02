@@ -22920,7 +22920,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="C7" library="rc-elektronik" deviceset="C-EU" device="C1206" value="100n"/>
 <part name="DA1" library="mc34063" deviceset="MC34063" device="AD"/>
-<part name="R11" library="rcl" deviceset="R-EU_" device="M1206" value="180"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="M1206" value="200"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="M1206" value="1"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="M0805" value="3k"/>
