@@ -22932,7 +22932,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="C8" library="HWProgUSB" deviceset="RCL_CPOL-EU" device="E2-5" value="470µ / 10V"/>
+<part name="C8" library="HWProgUSB" deviceset="RCL_CPOL-EU" device="E2-5" value="47µ/16V"/>
 <part name="C9" library="HWProgUSB" deviceset="RCL_CPOL-EU" device="E2-5" value="100µ 16V"/>
 <part name="C10" library="rcl" deviceset="C-EU" device="C1206" value="100n"/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
@@ -23147,8 +23147,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="GND9" gate="1" x="251.46" y="104.14"/>
 <instance part="GND10" gate="1" x="251.46" y="124.46"/>
 <instance part="C8" gate="G$1" x="210.82" y="121.92" smashed="yes">
-<attribute name="NAME" x="219.583" y="108.4326" size="1.778" layer="95"/>
-<attribute name="VALUE" x="217.043" y="105.8926" size="1.778" layer="96"/>
+<attribute name="NAME" x="209.423" y="103.3526" size="1.778" layer="95"/>
+<attribute name="VALUE" x="209.423" y="100.8126" size="1.778" layer="96"/>
 </instance>
 <instance part="C9" gate="G$1" x="241.3" y="114.3" rot="MR0"/>
 <instance part="C10" gate="G$1" x="251.46" y="111.76" smashed="yes" rot="MR180">
