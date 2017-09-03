@@ -3007,7 +3007,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="10.4775" y="16.8275" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="JMEM" library="ArduinoBASIC" package="1X04" value="" x="19.05" y="18.415"/>
-<element name="HL1" library="ArduinoBASIC" package="LED5MM" value="" x="13.6525" y="56.8325" smashed="yes" rot="R180">
+<element name="HL1" library="ArduinoBASIC" package="LED5MM" value="red" x="13.6525" y="56.8325" smashed="yes" rot="R180">
 <attribute name="NAME" x="17.78" y="61.0616" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="10.4521" y="58.6359" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
@@ -3021,9 +3021,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="6.1595" y="55.5625" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="12.5095" y="53.975" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R3" library="rcl" package="R1206W" value="10k" x="14.605" y="53.975" rot="MR270"/>
-<element name="R2" library="rcl" package="R0805" value="1k" x="4.729990625" y="44.4246" rot="MR0"/>
-<element name="HL2" library="ArduinoBASIC" package="LED5MM" value="" x="23.495" y="56.8325" smashed="yes" rot="R180">
+<element name="R3" library="rcl" package="R1206W" value="300*" x="14.605" y="53.975" rot="MR270"/>
+<element name="R2" library="rcl" package="R0805" value="10k" x="4.729990625" y="44.4246" rot="MR0"/>
+<element name="HL2" library="ArduinoBASIC" package="LED5MM" value="yellow" x="23.495" y="56.8325" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.94" y="61.0616" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="20.2946" y="58.6359" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
@@ -3031,9 +3031,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="21.59" y="61.087" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="22.352" y="53.975" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R5" library="rcl" package="R1206W" value="10k" x="24.765" y="53.975" rot="MR270"/>
+<element name="R5" library="rcl" package="R1206W" value="3.3k*" x="24.765" y="53.975" rot="MR270"/>
 <element name="R4" library="rcl" package="R0805" value="10k" x="15.24" y="59.055" rot="MR180"/>
-<element name="HL3" library="ArduinoBASIC" package="LED5MM" value="" x="33.3375" y="56.8325" smashed="yes" rot="R180">
+<element name="HL3" library="ArduinoBASIC" package="LED5MM" value="green" x="33.3375" y="56.8325" smashed="yes" rot="R180">
 <attribute name="NAME" x="38.4175" y="60.4266" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="30.1371" y="58.6359" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
@@ -3041,7 +3041,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="32.0675" y="61.087" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="32.1945" y="53.975" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R7" library="rcl" package="R0805" value="10k" x="32.385" y="53.975" rot="MR0"/>
+<element name="R7" library="rcl" package="R0805" value="680*" x="32.385" y="53.975" rot="MR0"/>
 <element name="R6" library="rcl" package="R0805" value="10k" x="25.0825" y="59.055" rot="MR180"/>
 <element name="L2" library="rcl" package="0204/5" value="" x="107.6325" y="53.34"/>
 <element name="C12" library="HWProgUSB" package="RCL_E2-5" value="100µ 16V" x="3.81" y="19.3675" smashed="yes" rot="R180">

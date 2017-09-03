@@ -22955,7 +22955,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="JMEM" library="ArduinoBASIC" deviceset="PINHD-1X4" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
-<part name="HL1" library="ArduinoBASIC" deviceset="LED" device="5MM"/>
+<part name="HL1" library="ArduinoBASIC" deviceset="LED" device="5MM" value="red"/>
 <part name="PINV" library="ArduinoBASIC" deviceset="FE12-1" device="">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
@@ -22964,19 +22964,19 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </part>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="VT1" library="transistor" deviceset="*-NPN-" device="TO92-ECB" technology="BC368" value="КТ315Б"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R1206W" value="10k"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R1206W" value="300*"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
-<part name="HL2" library="ArduinoBASIC" deviceset="LED" device="5MM"/>
+<part name="HL2" library="ArduinoBASIC" deviceset="LED" device="5MM" value="yellow"/>
 <part name="VT2" library="transistor" deviceset="*-NPN-" device="TO92-ECB" technology="BC368" value="КТ315Б"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R1206W" value="10k"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R1206W" value="3.3k*"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
-<part name="HL3" library="ArduinoBASIC" deviceset="LED" device="5MM"/>
+<part name="HL3" library="ArduinoBASIC" deviceset="LED" device="5MM" value="green"/>
 <part name="VT3" library="transistor" deviceset="*-NPN-" device="TO92-ECB" technology="BC368" value="КТ315Б"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="680*"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="P+10" library="supply1" deviceset="VCC" device=""/>
@@ -23179,7 +23179,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </instance>
 <instance part="HL1" gate="G$1" x="45.72" y="195.58" smashed="yes">
 <attribute name="NAME" x="46.228" y="197.104" size="1.778" layer="95"/>
-<attribute name="VALUE" x="51.435" y="191.008" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="46.228" y="189.865" size="1.778" layer="96"/>
 </instance>
 <instance part="PINV" gate="G$1" x="170.18" y="121.92" rot="R180"/>
 <instance part="P+7" gate="VCC" x="160.02" y="139.7" smashed="yes">
@@ -23202,8 +23202,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <attribute name="VALUE" x="50.8" y="180.34" size="1.778" layer="96"/>
 </instance>
 <instance part="HL2" gate="G$1" x="71.12" y="195.58" smashed="yes">
-<attribute name="NAME" x="71.628" y="197.104" size="1.778" layer="95"/>
-<attribute name="VALUE" x="76.835" y="191.008" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="70.612" y="199.136" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="71.628" y="197.485" size="1.778" layer="96"/>
 </instance>
 <instance part="VT2" gate="G$1" x="68.58" y="182.88" smashed="yes">
 <attribute name="NAME" x="58.42" y="182.88" size="1.778" layer="95"/>
@@ -23222,8 +23222,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <attribute name="VALUE" x="76.2" y="180.34" size="1.778" layer="96"/>
 </instance>
 <instance part="HL3" gate="G$1" x="96.52" y="195.58" smashed="yes">
-<attribute name="NAME" x="97.028" y="197.104" size="1.778" layer="95"/>
-<attribute name="VALUE" x="102.235" y="191.008" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="96.012" y="199.136" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="97.028" y="197.485" size="1.778" layer="96"/>
 </instance>
 <instance part="VT3" gate="G$1" x="93.98" y="182.88" smashed="yes">
 <attribute name="NAME" x="83.82" y="182.88" size="1.778" layer="95"/>
