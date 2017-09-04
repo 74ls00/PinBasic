@@ -2,7 +2,7 @@
 chcp 1251
 rem в свойствах консоли изменить шрифт
 title -= avrdude STK500 AVR =-
-set port=com7
+set port=com6
 set mk=m328p
 
 set prog=stk500v2
@@ -11,7 +11,8 @@ set fwn=DSS31.hex
 set tdir=%~d0%~p0bin\
 set fw=%tdir%..\..\ab.hex
 set eep=eep.eep
-set lfuse=FF
+rem set lfuse=FF
+set lfuse=C2
 set hfuse=D2
 :menu
 cls
@@ -66,7 +67,7 @@ goto menu
 echo Write fuses ?
 pause
 pause
-rem %tdir%\avrdude.exe -p %mk% -P %port% -c %prog% -B 4800 -i 500 -U lfuse:w:0x%lfuse%:m
+%tdir%\avrdude.exe -p %mk% -P %port% -c %prog% -i 500 -U lfuse:w:0x%lfuse%:m
 %tdir%\avrdude.exe -p %mk% -P %port% -c %prog% -i 500 -U hfuse:w:0x%hfuse%:m
 pause
 cls
