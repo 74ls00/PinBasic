@@ -2,7 +2,7 @@ Arduino Basic
 =============
 Now you can turn your Arduino into an 80's home computer!
 
-https://github.com/74ls00/ArduinoBASIC
+https://github.com/robinhedwards/ArduinoBASIC
 
 A complete BASIC interpreter for the Arduino, using a PS/2 keyboard, and SPI OLED screen. The BASIC supports almost all the usual features, with float and string variables, multi-dimensional arrays, FOR-NEXT, GOSUB-RETURN, etc. Saving and Loading from EEPROM is supported, as well as auto-running a program on power-up. You can also read and write from the analog and digital pins.
 
