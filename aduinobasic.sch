@@ -22896,8 +22896,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="S58" library="ArduinoBASIC" deviceset="10-XX" device="" value="Enter"/>
 <part name="DISPLAY" library="ArduinoBASIC" deviceset="SSD1306" device=""/>
 <part name="Z1" library="crystal" deviceset="CRYSTAL" device="HC49S" value="16Mhz"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="025-025X050" value="1n"/>
-<part name="C3" library="rcl" deviceset="C-EU" device="025-025X050" value="1n"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="025-025X050" value="22"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="025-025X050" value="22"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
@@ -22926,14 +22926,14 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R13" library="rcl" deviceset="R-EU_" device="M0805" value="3k"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="M0805" value="1k"/>
 <part name="L1" library="rcl" deviceset="L-US" device="0207/10" value="100uh"/>
-<part name="VD1" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD" value="SS12"/>
+<part name="VD1" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD" value="SS14"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="025-025X050" value="1n"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="C8" library="HWProgUSB" deviceset="RCL_CPOL-EU" device="E2-5" value="47µ/16V"/>
-<part name="C9" library="HWProgUSB" deviceset="RCL_CPOL-EU" device="E2-5" value="100µ 16V"/>
+<part name="C9" library="HWProgUSB" deviceset="RCL_CPOL-EU" device="E2-5" value="10µ 16V"/>
 <part name="C10" library="rcl" deviceset="C-EU" device="C1206" value="100n"/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="PING" library="ArduinoBASIC" deviceset="FE12-1" device="">
@@ -22980,8 +22980,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="P+10" library="supply1" deviceset="VCC" device=""/>
-<part name="L2" library="rcl" deviceset="L-US" device="0204/5"/>
-<part name="C12" library="HWProgUSB" deviceset="RCL_CPOL-EU" device="E2-5" value="100µ 16V"/>
+<part name="L2" library="rcl" deviceset="L-US" device="0204/5" value="100uh"/>
+<part name="C12" library="HWProgUSB" deviceset="RCL_CPOL-EU" device="E2-5" value="10µ 16V"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="C11" library="rcl" deviceset="C-EU" device="C1206" value="100n"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
@@ -22995,6 +22995,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <sheet>
 <plain>
 <text x="139.7" y="91.44" size="1.778" layer="91">LIN-601R Rev:1.0</text>
+<text x="124.46" y="193.04" size="5.08" layer="98">Arduino BASIC</text>
 </plain>
 <instances>
 <instance part="DD1" gate="G$1" x="58.42" y="137.16"/>
@@ -23064,8 +23065,14 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <attribute name="NAME" x="22.86" y="133.604" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="17.78" y="129.54" size="1.778" layer="96"/>
 </instance>
-<instance part="C2" gate="G$1" x="12.7" y="144.78" rot="R90"/>
-<instance part="C3" gate="G$1" x="12.7" y="134.62" rot="R90"/>
+<instance part="C2" gate="G$1" x="12.7" y="144.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.144" y="145.161" size="1.778" layer="95"/>
+<attribute name="VALUE" x="16.764" y="145.161" size="1.778" layer="96"/>
+</instance>
+<instance part="C3" gate="G$1" x="12.7" y="134.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.144" y="135.001" size="1.778" layer="95"/>
+<attribute name="VALUE" x="18.796" y="136.779" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="GND2" gate="1" x="7.62" y="129.54"/>
 <instance part="GND3" gate="1" x="33.02" y="106.68"/>
 <instance part="C5" gate="G$1" x="27.94" y="119.38" smashed="yes" rot="MR0">
@@ -23100,7 +23107,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <attribute name="NAME" x="29.21" y="78.105" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="16.51" y="71.12" size="1.778" layer="96"/>
 </instance>
-<instance part="PORT" gate="G$1" x="152.4" y="162.56" rot="R180"/>
+<instance part="PORT" gate="G$1" x="149.86" y="165.1" rot="R270"/>
 <instance part="C4" gate="G$1" x="22.86" y="119.38" smashed="yes" rot="MR0">
 <attribute name="NAME" x="21.336" y="107.061" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="21.336" y="104.521" size="1.778" layer="96" rot="MR0"/>
@@ -23165,9 +23172,15 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="SW1" gate="2" x="185.42" y="132.08" rot="R270"/>
 <instance part="GND1" gate="1" x="177.8" y="114.3"/>
 <instance part="DD2" gate="G$1" x="193.04" y="165.1"/>
-<instance part="R8" gate="G$1" x="177.8" y="180.34" rot="R90"/>
+<instance part="R8" gate="G$1" x="177.8" y="180.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="181.61" y="181.8386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="181.61" y="179.578" size="1.778" layer="96"/>
+</instance>
 <instance part="GND12" gate="1" x="200.66" y="149.86"/>
-<instance part="R9" gate="G$1" x="210.82" y="180.34" rot="R90"/>
+<instance part="R9" gate="G$1" x="210.82" y="180.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="214.63" y="179.2986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="214.63" y="177.038" size="1.778" layer="96"/>
+</instance>
 <instance part="P+1" gate="VCC" x="210.82" y="193.04" smashed="yes">
 <attribute name="VALUE" x="213.36" y="195.58" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -23241,7 +23254,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <instance part="P+10" gate="VCC" x="104.14" y="182.88" smashed="yes" rot="R180">
 <attribute name="VALUE" x="101.6" y="180.34" size="1.778" layer="96"/>
 </instance>
-<instance part="L2" gate="G$1" x="266.7" y="149.86" rot="R90"/>
+<instance part="L2" gate="G$1" x="266.7" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="264.16" y="148.59" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="274.32" y="148.59" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="C12" gate="G$1" x="276.86" y="114.3" rot="MR0"/>
 <instance part="GND18" gate="1" x="276.86" y="104.14"/>
 <instance part="C11" gate="G$1" x="264.16" y="111.76" smashed="yes" rot="MR180">
@@ -23847,8 +23863,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="93.98" y="162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="144.78" y1="149.86" x2="137.16" y2="149.86" width="0.1524" layer="91"/>
-<label x="137.16" y="149.86" size="1.778" layer="95"/>
+<wire x1="162.56" y1="157.48" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
+<label x="162.56" y="149.86" size="1.778" layer="95" rot="R90"/>
 <pinref part="PORT" gate="G$1" pin="11"/>
 </segment>
 </net>
@@ -23859,8 +23875,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="93.98" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="144.78" y1="147.32" x2="137.16" y2="147.32" width="0.1524" layer="91"/>
-<label x="137.16" y="147.32" size="1.778" layer="95"/>
+<wire x1="165.1" y1="157.48" x2="165.1" y2="149.86" width="0.1524" layer="91"/>
+<label x="165.1" y="149.86" size="1.778" layer="95" rot="R90"/>
 <pinref part="PORT" gate="G$1" pin="12"/>
 </segment>
 </net>
@@ -23871,8 +23887,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="93.98" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="144.78" y1="157.48" x2="137.16" y2="157.48" width="0.1524" layer="91"/>
-<label x="137.16" y="157.48" size="1.778" layer="95"/>
+<wire x1="154.94" y1="157.48" x2="154.94" y2="149.86" width="0.1524" layer="91"/>
+<label x="154.94" y="149.86" size="1.778" layer="95" rot="R90"/>
 <pinref part="PORT" gate="G$1" pin="8"/>
 </segment>
 </net>
@@ -23883,8 +23899,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="93.98" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="144.78" y1="160.02" x2="137.16" y2="160.02" width="0.1524" layer="91"/>
-<label x="137.16" y="160.02" size="1.778" layer="95"/>
+<wire x1="152.4" y1="157.48" x2="152.4" y2="149.86" width="0.1524" layer="91"/>
+<label x="152.4" y="149.86" size="1.778" layer="95" rot="R90"/>
 <pinref part="PORT" gate="G$1" pin="7"/>
 </segment>
 </net>
@@ -23895,8 +23911,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="93.98" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="144.78" y1="154.94" x2="137.16" y2="154.94" width="0.1524" layer="91"/>
-<label x="137.16" y="154.94" size="1.778" layer="95"/>
+<wire x1="157.48" y1="157.48" x2="157.48" y2="149.86" width="0.1524" layer="91"/>
+<label x="157.48" y="149.86" size="1.778" layer="95" rot="R90"/>
 <pinref part="PORT" gate="G$1" pin="9"/>
 </segment>
 </net>
@@ -23907,8 +23923,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="93.98" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="144.78" y1="152.4" x2="137.16" y2="152.4" width="0.1524" layer="91"/>
-<label x="137.16" y="152.4" size="1.778" layer="95"/>
+<wire x1="160.02" y1="157.48" x2="160.02" y2="149.86" width="0.1524" layer="91"/>
+<label x="160.02" y="149.86" size="1.778" layer="95" rot="R90"/>
 <pinref part="PORT" gate="G$1" pin="10"/>
 </segment>
 </net>
@@ -23931,8 +23947,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="93.98" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="144.78" y1="162.56" x2="137.16" y2="162.56" width="0.1524" layer="91"/>
-<label x="137.16" y="162.56" size="1.778" layer="95"/>
+<wire x1="149.86" y1="157.48" x2="149.86" y2="149.86" width="0.1524" layer="91"/>
+<label x="149.86" y="149.86" size="1.778" layer="95" rot="R90"/>
 <pinref part="PORT" gate="G$1" pin="6"/>
 </segment>
 </net>
@@ -23943,8 +23959,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="93.98" y="137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="144.78" y1="165.1" x2="137.16" y2="165.1" width="0.1524" layer="91"/>
-<label x="137.16" y="165.1" size="1.778" layer="95"/>
+<wire x1="147.32" y1="157.48" x2="147.32" y2="149.86" width="0.1524" layer="91"/>
+<label x="147.32" y="149.86" size="1.778" layer="95" rot="R90"/>
 <pinref part="PORT" gate="G$1" pin="5"/>
 </segment>
 </net>
@@ -23955,8 +23971,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="93.98" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="144.78" y1="167.64" x2="137.16" y2="167.64" width="0.1524" layer="91"/>
-<label x="137.16" y="167.64" size="1.778" layer="95"/>
+<wire x1="144.78" y1="157.48" x2="144.78" y2="149.86" width="0.1524" layer="91"/>
+<label x="144.78" y="149.86" size="1.778" layer="95" rot="R90"/>
 <pinref part="PORT" gate="G$1" pin="4"/>
 </segment>
 </net>
@@ -23967,8 +23983,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="93.98" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="144.78" y1="175.26" x2="137.16" y2="175.26" width="0.1524" layer="91"/>
-<label x="137.16" y="175.26" size="1.778" layer="95"/>
+<wire x1="137.16" y1="157.48" x2="137.16" y2="149.86" width="0.1524" layer="91"/>
+<label x="137.16" y="149.86" size="1.778" layer="95" rot="R90"/>
 <pinref part="PORT" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -23984,8 +24000,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="93.98" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="144.78" y1="172.72" x2="137.16" y2="172.72" width="0.1524" layer="91"/>
-<label x="137.16" y="172.72" size="1.778" layer="95"/>
+<wire x1="139.7" y1="157.48" x2="139.7" y2="149.86" width="0.1524" layer="91"/>
+<label x="139.7" y="149.86" size="1.778" layer="95" rot="R90"/>
 <pinref part="PORT" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -24001,8 +24017,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="93.98" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="144.78" y1="170.18" x2="137.16" y2="170.18" width="0.1524" layer="91"/>
-<label x="137.16" y="170.18" size="1.778" layer="95"/>
+<wire x1="142.24" y1="157.48" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
+<label x="142.24" y="149.86" size="1.778" layer="95" rot="R90"/>
 <pinref part="PORT" gate="G$1" pin="3"/>
 </segment>
 <segment>
