@@ -11,8 +11,8 @@ set fwn=DSS31.hex
 set tdir=%~d0%~p0bin\
 set fw=%tdir%..\..\ab.hex
 set eep=eep.eep
-rem set lfuse=FF
-set lfuse=C2
+set lfuse=FF
+rem set lfuse=C2
 set hfuse=D2
 :menu
 cls
